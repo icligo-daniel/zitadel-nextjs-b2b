@@ -1,3 +1,5 @@
+(This is cloned from https://github.com/zitadel/zitadel-nextjs-b2b)
+
 # ZITADEL B2B Demo
 
 This is a demo showcasing how you can use ZITADEL in a B2B (Business-to-Business) context, where a company is providing a customer portal to their customers:
@@ -33,7 +35,7 @@ Then on the project detail page click on new application and enter a name for th
 Let's call this one `portal-web`.
 Select `Web`, continue, `Code`, then enter `http://localhost:3000/api/auth/callback/zitadel` for the redirect, and `http://localhost:3000` for the post redirect. Then press on `create`.
 
-Copy the "Secret" and "Resource Id" of the project `Portal` as you will need this in your environment configuration file later.
+Copy the "Secret" and "Resource Id" of the project `Portal` as you will need this in your environment configuration file later. (For ZITADEL_CLIENT_ID and ZITADEL_CLIENT_SECRET)
 
 Click on the application `portal-web`.
 On the application detail page click on the section under redirect settings and enable `Development Mode`. This will allow you application to work on `localhost:3000`.
@@ -81,6 +83,7 @@ ZITADEL_API=https://{YourDomain}.zitadel.cloud
 ORG_ID={YourOrgId}
 PROJECT_ID={YourProjectId}
 ZITADEL_CLIENT_ID={YourClientID}
+ZITADEL_CLIENT_SECRET={YourClientSecret}
 SERVICE_ACCOUNT_ACCESS_TOKEN={YourServiceAccountSecret}
 NEXTAUTH_SECRET=randomsecret
 ```
